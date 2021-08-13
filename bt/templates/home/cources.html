@@ -1,0 +1,174 @@
+
+{% extends "basic.html"%}
+
+{% block title %} Cources page {% endblock %}
+{% block style %}
+
+
+.container{
+display:flex;
+<!--flex-direction:column;-->
+align-items:center;
+justify-content:center;}
+
+.h1-primary{
+height:100px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+background-color: #ddd9f7;
+margin-left: 7px;
+    margin-bottom: 16px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+      border:2px solid #4e11cb;
+cursor:pointer;
+
+}
+
+.card-body:hover{
+border-radius: 60px;
+
+    background-color: #dbeece;
+    border: 2px solid;
+    border: 2px solid #0a8a0a;
+
+
+}
+.btn-primary {
+    background-color: #4e11cb;
+    margin-top: 11px;
+}
+
+.btn-primary:hover{
+background-color: #27a499;
+border-radius: 26px;
+}
+{% endblock %}
+{% block body %}
+
+<div class="container">
+ <h1 class=" container h1-primary">All Departments Cources !</h1>
+
+</div>
+
+<div class="container">
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5>Programming Languages</h5>
+            <a href="/programming/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <a href="/development/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Python Developer</h5>
+            <a href="/python_developer/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Machine Learning</h5>
+            <a href="/machine_learning/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container">
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Quantitive Aptitude</h5>
+            <a href="/quantitive_aptitude/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Django</h5>
+            <a href="/django/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Flask</h5>
+            <a href="/flask/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">English Speaking</h5>
+            <a href="/english_speaking/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Soft Skill</h5>
+            <a href="/soft_skill/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">INTERIOR DESIGN</h5>
+            <a href="/interior_design/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">CAD </h5>
+            <a href="/cad/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Deep Learning</h5>
+            <a href="/machine_learning/" class="btn btn-primary">Go to Cource</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}

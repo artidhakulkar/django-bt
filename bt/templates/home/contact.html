@@ -1,0 +1,55 @@
+{% extends "basic.html"%}
+
+{% block title %} Contact page{% endblock %}
+{% block style %}
+body {
+background-image: url("https://tse1.mm.bing.net/th?id=OIP.M614pF36POHzFaJq4FA4ggHaFZ&pid=Api&P=0&w=277&h=202");
+background-position:center;
+background-size:cover;
+}
+
+
+.btn-success:hover {
+    background-color: red;
+}
+
+{% endblock %}
+{% block body %}
+
+
+<div class="container my-3">
+
+    <h1> Contact with @iCODER!</h1>
+    <form action="/contact/" method="post">
+    <div class="mb-3">
+         <label for="email" class="form-label">Email address</label>
+         <input type="email" class="form-control" id="email" name="email"  placeholder="name@example.com">
+   </div>
+
+    <div class="mb-3">
+         <label for="name" class="form-label">Name </label>
+         <input type="text" class="form-control" id="name"  name="name" placeholder="Enter Your Name ">
+   </div>
+
+    <div class="mb-3">
+         <label for="address1" class="form-label">Address</label>
+         <input type="text" class="form-control" id="address1"  name="address1" placeholder="Enter Your Address">
+   </div>
+
+    <div class="mb-3">
+         <label for="phone" class="form-label">Phone</label>
+         <input type="tel" class="form-control" id="phone"  name="phone" placeholder="Enter Your phone no">
+   </div>
+
+
+
+<div class="mb-3">
+  <label for="textarea" class="form-label">Write Your Comments </label>
+  <textarea class="form-control" id="textarea"  name="textarea" rows="3"></textarea>
+</div>
+    <button type="button" class="btn btn-success">Success</button>
+
+    </form>
+</div>
+
+{% endblock %}
